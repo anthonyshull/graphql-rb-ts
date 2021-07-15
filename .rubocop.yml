@@ -1,0 +1,5 @@
+Lint/MissingSuper:
+  Enabled: false
+
+Metrics/MethodLength:
+  Max: 12

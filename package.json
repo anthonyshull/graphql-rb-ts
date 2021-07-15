@@ -1,0 +1,20 @@
+{
+  "name": "graphy",
+  "dependencies": {
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-query": "3.18.1"
+  },
+  "devDependencies": {
+    "@2fd/graphdoc": "2.4.0",
+    "@aws-amplify/graphql-docs-generator": "2.3.4",
+    "@graphql-codegen/cli": "1.21.6",
+    "@graphql-codegen/typescript": "1.22.4",
+    "@graphql-codegen/typescript-operations": "1.18.3",
+    "@graphql-codegen/typescript-react-query": "1.3.4",
+    "@types/react": "17.0.14",
+    "@types/react-dom": "17.0.9",
+    "parcel": "2.0.0-beta.2",
+    "typescript": "4.3.5"
+  }
+}

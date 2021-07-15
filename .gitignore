@@ -1,0 +1,15 @@
+.bundle
+.byebug_history
+.gitattributes
+.log
+.parcel-cache
+.pryrc
+dist
+log
+node_modules
+storage
+tmp
+vendor
+
+/db/*.sqlite3
+/db/*.sqlite3-*

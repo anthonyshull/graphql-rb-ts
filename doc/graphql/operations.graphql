@@ -1,0 +1,148 @@
+# this is an auto generated file. This will be overwritten
+query Products($after: String, $before: String, $first: Int, $last: Int) {
+  products(after: $after, before: $before, first: $first, last: $last) {
+    edges {
+      cursor
+    }
+    nodes {
+      brand
+      createdAt
+      id
+      name
+      updatedAt
+    }
+    pageInfo {
+      endCursor
+      hasNextPage
+      hasPreviousPage
+      startCursor
+    }
+  }
+}
+query Purchase($id: ID!) {
+  purchase(id: $id) {
+    buyer {
+      createdAt
+      email
+      id
+      name
+      updatedAt
+    }
+    createdAt
+    id
+    price
+    product {
+      brand
+      createdAt
+      id
+      name
+      updatedAt
+    }
+    seller {
+      createdAt
+      email
+      id
+      name
+      updatedAt
+    }
+    updatedAt
+  }
+}
+query Purchases {
+  purchases {
+    buyer {
+      createdAt
+      email
+      id
+      name
+      updatedAt
+    }
+    createdAt
+    id
+    price
+    product {
+      brand
+      createdAt
+      id
+      name
+      updatedAt
+    }
+    seller {
+      createdAt
+      email
+      id
+      name
+      updatedAt
+    }
+    updatedAt
+  }
+}
+query User($id: ID!) {
+  user(id: $id) {
+    createdAt
+    email
+    id
+    name
+    purchases {
+      createdAt
+      id
+      price
+      updatedAt
+    }
+    stats {
+      boughtFrom
+      soldTo
+    }
+    updatedAt
+  }
+}
+query Users {
+  users {
+    createdAt
+    email
+    id
+    name
+    purchases {
+      createdAt
+      id
+      price
+      updatedAt
+    }
+    stats {
+      boughtFrom
+      soldTo
+    }
+    updatedAt
+  }
+}
+query UsersSortedByCreatedAt($direction: String!) {
+  usersSortedByCreatedAt(direction: $direction) {
+    createdAt
+    email
+    id
+    name
+    purchases {
+      createdAt
+      id
+      price
+      updatedAt
+    }
+    stats {
+      boughtFrom
+      soldTo
+    }
+    updatedAt
+  }
+}
+mutation CreatePurchase($input: CreatePurchaseMutationInput!) {
+  createPurchase(input: $input) {
+    clientMutationId
+    errors
+    purchase {
+      createdAt
+      id
+      price
+      updatedAt
+    }
+  }
+}

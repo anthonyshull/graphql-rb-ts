@@ -1,0 +1,14 @@
+schema: ./doc/graphql/schema.graphql
+documents: ./doc/graphql/operations.graphql
+generates:
+  ./src/Client.ts:
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-react-query
+    config:
+      fetcher:
+        endpoint: http://165.227.123.154:3000/graphql
+        fetchParams:
+          headers:
+            Content-Type: application/json
