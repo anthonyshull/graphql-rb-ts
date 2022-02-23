@@ -84,7 +84,7 @@ This is the standard GraphQL implementation of errors.
       "locations": [ {} ],
       "path": [],
       "extensions": {
-        "code": "
+        "code": ""
       }
     }
   ]
